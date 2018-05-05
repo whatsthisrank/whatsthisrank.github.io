@@ -29,6 +29,20 @@ var gameData = {
         "baseUrl": "https://rocketleague.tracker.network",
         "imgUrl": "/Images/RL/ranked/s4-" + IMG_URL_PLACEHOLDER + ".png",
         "startIdx": 1
+    },
+    hots: {
+        "numRanks": 7,
+        "name": "Heroes of the Storm",
+        "baseUrl": "./assets/img/hots",
+        "imgUrl": "/" + IMG_URL_PLACEHOLDER + ".png",
+        "startIdx": 0
+    },
+    ow:{
+        "numRanks": 7,
+        "name": "Overwatch",
+        "baseUrl": "./assets/img/ow",
+        "imgUrl": "/" + IMG_URL_PLACEHOLDER + ".png",
+        "startIdx": 0
     }
 }
 
