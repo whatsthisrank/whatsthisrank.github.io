@@ -1,7 +1,27 @@
 <!doctype html>
 <html>
-<head>whatsthisrank</head>
+<head>
+    <title>whatsthisrank</title>
+    <!-- TODO meta-->
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
 <body>
-    <h1>whatsthisrank</h1>    
+    <div id="mainWrapper">
+        <div id="gameSelector">
+            <select id="leftColumnGame" class="gameSelector" onchange="fetchGameRanks(this.value, 'leftColumn')">
+                <option value="def" selected="selected">-- Choose Game 1 --</option>
+            </select>
+            <select id="rightColumnGame" class="gameSelector" onchange="fetchGameRanks(this.value, 'rightColumn')">
+                <option value="def" selected="selected">-- Choose Game 2 --</option>
+            </select>
+        </div>
+        <div id="rankCompareSection">
+            <div id="leftColumn"></div>
+            <div id="rightColumn"></div>
+        </div>
+
+    </div>
 </body>
 </html>
