@@ -168,12 +168,12 @@ var calculateSpacing = function(){
         // currently set to 40px
         var verticalPixelsToMakeUp = 40 * differenceInNumOfRanks;
         var pixelsToMakeUpPerRank = verticalPixelsToMakeUp / gameData[gameToAdjust].numRanks;
-        var pixelsToMakeUpPerRankHalf = pixelsToMakeUpPerRank / 2;
+        //var pixelsToMakeUpPerRankHalf = pixelsToMakeUpPerRank / 2;
 
         var columnWeAreAdjusting = gameToAdjust == game1 ? "leftColumn" : "rightColumn";
         var columnClass = ".rank-container." + columnWeAreAdjusting;
         $(columnClass).css("margin-bottom", pixelsToMakeUpPerRank + "px"); // make up the pixels
-        $(columnClass).css("margin-top", pixelsToMakeUpPerRankHalf + "px"); // shift them all down
+        $(columnClass).css("margin-top", pixelsToMakeUpPerRank + "px"); // shift them all down
     }
 }
 

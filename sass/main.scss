@@ -3,6 +3,36 @@
 
 #mainWrapper{
     width: 100%;
+    background-color: #252525;
+
+    #header{
+        font-family: 'Indie Flower', cursive;
+        font-size: 32px; 
+        color: #e2e2e2;
+        background-color: #222;
+        padding: 4px 0;
+
+        span{
+            padding: 12px;
+        }
+    }
+
+    #gameSelector{
+        width: 500px;
+        margin: 0 auto;
+
+        #rightColumnGame{
+            float: right;
+        }
+
+        #leftColumnGame{
+            float: left;
+        }
+
+        .gameSelector{
+            width: 225px;
+        }
+    }
 
     #rankCompareSection{
         width: 100%;
@@ -23,78 +53,59 @@
         }
 
         .column{
-            .rank{
+            .rank-container{
+                height: 40px;
+                width: 250px;
+                background-color: #525252;
+                border-radius: 6px;
+                border: 2px solid black;
+                overflow: hidden;
                 display: block;
-            }
             
-            .rank-leftColumn{
-                display: block;
-                margin-left: auto;
-                margin-right: 20px;
-            }
+                &.leftColumn{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: 20px;
+                }
             
-            .rank-rightColumn{
-                margin-left: 20px;
-            }
+                &.rightColumn{
+                    margin-left: 20px;
+                }
+            
+                text-align: center;
+                line-height: 40px;
+            
+                .rank-img{
+                    height: 100px;
+                    max-width: 120px;
+                    margin-top: -25px;
+            
+                    &.left-column{
+                        float: right;
+                    }
+                
+                    &.right-column{
+                        float: left;
+                    }
+                }
+            
+                .rank-txt{
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px; 
+                    color: #e2e2e2;
+            
+                    padding-top: 2px;
+                    &.left-column{
+                        float: left;
+                        margin-left: 10px;
+                    }
+                
+                    &.right-column{
+                        float: right;
+                        margin-right: 10px;
+                    }
+                }
+            } 
         }
     }
 }
-
-
-
-
-
-.rank-container{
-    height: 40px;
-    width: 250px;
-    background-color: #525252;
-    border-radius: 6px;
-    border: 2px solid black;
-    overflow: hidden;
-    display: block;
-
-    &.leftColumn{
-        display: block;
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    &.rightColumn{
-        margin-left: 20px;
-    }
-
-    text-align: center;
-    vertical-align: middle;
-    line-height: 40px;
-
-    .rank-img{
-        height: 100px;
-        max-width: 120px;
-        margin-top: -25px;
-
-        &.left-column{
-            float: right;
-        }
-    
-        &.right-column{
-            float: left;
-        }
-    }
-
-    .rank-txt{
-        font-family: 'Indie Flower', cursive;
-        font-size: 20px; 
-        color: #e2e2e2;
-
-        padding-top: 2px;
-        &.left-column{
-            float: left;
-            margin-left: 10px;
-        }
-    
-        &.right-column{
-            float: right;
-            margin-right: 10px;
-        }
-    }
-} 
